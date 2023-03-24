@@ -1,6 +1,6 @@
 <html>
     <header>
-        <title>Maïs</title>
+        <title>Plunger</title>
         <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     </header>
     <body style="overflow:hidden; background-color: #cecece;">
@@ -9,15 +9,7 @@
         <script>
             document.querySelector('body').addEventListener('click', function() {
                 document.querySelector('audio').play();
-                var elem = document.querySelector('video');
-                if (elem.requestFullscreen) {
-                    elem.requestFullscreen();
-                } else if (elem.webkitRequestFullscreen) { /* Safari */
-                    elem.webkitRequestFullscreen();
-                } else if (elem.msRequestFullscreen) { /* IE11 */
-                    elem.msRequestFullscreen();
-                }
             });
-                </script>
+        </script>
     </body>
 </html>
