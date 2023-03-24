@@ -1,0 +1,23 @@
+<html>
+    <header>
+        <title>Maïs</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    </header>
+    <body style="overflow:hidden; background-color: #cecece;">
+        <video src="./video.mp4" loop autoplay muted width="100%"></video>
+        <audio src="./audio.mp3" loop autoplay="autoplay"></audio>
+        <script>
+            document.querySelector('body').addEventListener('click', function() {
+                document.querySelector('audio').play();
+                var elem = document.querySelector('video');
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                    elem.msRequestFullscreen();
+                }
+            });
+                </script>
+    </body>
+</html>
